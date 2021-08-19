@@ -34,13 +34,14 @@ document.addEventListener("keydown", keyPush )
             py=0
         }
 
-        context.fillStyle = "black"
+        context.fillStyle = "#002232"
         context.fillRect(0, 0, stage.width, stage.height) // pintando a tela 
 
-        context.fillStyle = "red"//cor da maça
+        context.fillStyle = "#ff674b"//cor da maça
+        
         context.fillRect(ax*tp, ay*tp,  tp,tp )
         
-        context.fillStyle = "green"
+        context.fillStyle = "#8eea80"
 
         for (var i = 0; i < trail.length; i++) {
             context.fillRect(trail[i].x*tp, trail[i].y*tp,  tp-1,tp-1 )

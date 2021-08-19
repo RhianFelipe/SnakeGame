@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    text-align: center;
+  background-color:#e2e2e2
+    
+}
+h1{
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    font-size: 5rem;
+    font-family: sans-serif;
+    color: #00465c;
+}
+button{
+    padding: 1rem;
+    width: 250px;
+    background-color: #00465c;
+    border: 0;
+    border-radius:15px;
+    outline: 0;
+    cursor:pointer;
+    margin-top: 10rem;
+}
+a , strong{
+   
+    background-color:#00465c ;
+    font-size: 2.3rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+button:hover{
+    animation-name: botao;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    
+  }
+  
+     @keyframes botao {
+       0%{
+         transform: scale(1);
+       }
+       100%{
+         transform: scale(1.05);
+       }
+     }
