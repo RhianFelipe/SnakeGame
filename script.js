@@ -34,8 +34,8 @@ document.addEventListener("keydown", keyPush )
             py=0
         }
 
-        //context.fillStyle = "#002232"
-        context.fillStyle = "red"
+        context.fillStyle = "#002232"
+    
         context.fillRect(0, 0, stage.width, stage.height) // pintando a tela 
 
         context.fillStyle = "#ff674b"//cor da maça
