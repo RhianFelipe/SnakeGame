@@ -7,7 +7,7 @@ document.addEventListener("keydown", keyPush )
     //parte grafica e visual:
     setInterval(game, 60)
 
-    const vel = 1 //velocidade
+    const vel = 3 //velocidade
     var vx = vy = 0
     var px  = 10
     var py = 15 
