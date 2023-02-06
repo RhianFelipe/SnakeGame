@@ -8,7 +8,7 @@ document.addEventListener("keydown", keyPush )
     setInterval(game, 60)
 
     const velocidadeCobra = 1 //velocidade
-    var vx = vy = -10
+    var vx = vy = 0
     var posicaoNasceCobraX = 10
     var posicaoNasceCobraY = 15 
     var  tamanhoPeca = 20 //tamanho da peça por quadrado
