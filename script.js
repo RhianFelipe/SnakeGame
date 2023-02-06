@@ -11,7 +11,7 @@ document.addEventListener("keydown", keyPush )
     var vx = vy = 0
     var posicaoNasceCobraX = 10
     var posicaoNasceCobraY = 15 
-    var  tp = 20 //tamanho da peça por quadrado
+    var  tamanhoPeca = 20 //tamanho da peça por quadrado
     var qp = 20 //quantidade de peças no tabuleiro
     var ax = ay = 15 //posição da maça 
     var trail = [] 
@@ -40,12 +40,12 @@ document.addEventListener("keydown", keyPush )
 
         context.fillStyle = "#ff674b"//cor da maça
         
-        context.fillRect(ax*tp, ay*tp,  tp,tp )
+        context.fillRect(ax*tamanhoPeca, ay*tamanhoPeca,  tamanhoPeca,tamanhoPeca )
         
         context.fillStyle = "#8eea80"
 
         for (var i = 0; i < trail.length; i++) {
-            context.fillRect(trail[i].x*tp, trail[i].y*tp,  tp-1,tp-1 )
+            context.fillRect(trail[i].x*tamanhoPeca, trail[i].y*tamanhoPeca,  tamanhoPeca-1,tamanhoPeca-1 )
             if (trail[i].x == posicaoNasceCobraX  && trail[i].y == posicaoNasceCobraY){
                 vx = vy = 0
                 tail = 5
