@@ -15,7 +15,7 @@ document.addEventListener("keydown", keyPush )
     var quantidadePecas = 20 //quantidade de peças no tabuleiro
     var ax = ay = 15 //posição da maça 
     var trail = [] 
-    tail = 1 
+    tail = 5 
   
     function  game() {
       posicaoNasceCobraX += vx
