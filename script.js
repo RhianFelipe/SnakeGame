@@ -7,7 +7,7 @@ document.addEventListener("keydown", keyPush )
     //parte grafica e visual:
     setInterval(game, 60)
 
-    const velocidadeSnake = 1 //velocidade
+    const velocidadeCobra = 1 //velocidade
     var vx = vy = 0
     var posicaoNasceCobraX = 10
     var posicaoNasceCobraY = 15 
@@ -65,20 +65,20 @@ document.addEventListener("keydown", keyPush )
      function  keyPush(event) {
          switch (event.keyCode) {
              case 37: //Left 
-             vx = -velocidadeSnake 
+             vx = -velocidadeCobra
              vy=0
                  break;
                  case 38: //up
              vx= 0 
-             vy= -velocidadeSnake
+             vy= -velocidadeCobra
                  break;
                  case 39: //right
-             vx= velocidadeSnake 
+             vx= velocidadeCobra
              vy=0
                  break;
                  case 40: //down
              vx= 0
-             vy= velocidadeSnake
+             vy= velocidadeCobra
                  break;
                 
          
