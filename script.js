@@ -17,7 +17,7 @@ document.addEventListener("keydown", keyPush )
     var trail = [] 
     tail = 5 
   
-    function  game() {
+    function game() {
       posicaoNasceCobraX += vx
       posicaoNasceCobraY += vy
       if (posicaoNasceCobraX <0) {
@@ -40,7 +40,7 @@ document.addEventListener("keydown", keyPush )
 
         context.fillStyle = "#ff674b"//cor da maça
         
-        context.fillRect(macaPosicaoX*tamanhoPeca+20, macaPosicaoY*tamanhoPeca,  tamanhoPeca,tamanhoPeca )
+        context.fillRect(macaPosicaoX*tamanhoPeca, macaPosicaoY*tamanhoPeca,  tamanhoPeca+30,tamanhoPeca-10 )
         
         context.fillStyle = "#8eea80"
 
