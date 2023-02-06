@@ -9,7 +9,7 @@ document.addEventListener("keydown", keyPush )
 
     const vel = 1 //velocidade
     var vx = vy = 0
-    var px  = 30
+    var px  = -10
     var py = 15 
     var  tp = 20 //tamanho da peça por quadrado
     var qp = 20 //quantidade de peças no tabuleiro
