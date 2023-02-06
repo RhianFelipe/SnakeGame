@@ -40,7 +40,7 @@ document.addEventListener("keydown", keyPush )
 
         context.fillStyle = "#ff674b"//cor da maça
         
-        context.fillRect(macaPosicaoX*tamanhoPeca, macaPosicaoY*tamanhoPeca,  tamanhoPeca+30,tamanhoPeca-10 )
+        context.fillRect(macaPosicaoX*tamanhoPeca, macaPosicaoY*tamanhoPeca,  tamanhoPeca,tamanhoPeca )
         
         context.fillStyle = "#8eea80"
 
