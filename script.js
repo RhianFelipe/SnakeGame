@@ -9,8 +9,8 @@ document.addEventListener("keydown", keyPush )
 
     const vel = 1 //velocidade
     var vx = vy = 0
-    var px  = -10
-    var py = 15 
+    var posicaoNasceCobraX = 10
+    var posicaoNasceCobraY = 15 
     var  tp = 20 //tamanho da peça por quadrado
     var qp = 20 //quantidade de peças no tabuleiro
     var ax = ay = 15 //posição da maça 
@@ -18,20 +18,20 @@ document.addEventListener("keydown", keyPush )
     tail = 5 
   
     function  game() {
-      px += vx
-      py += vy
-      if (px <0) {
-          px=qp-1 
+      posicaoNasceCobraX += vx
+      posicaoNasceCobraY += vy
+      if (posicaoNasceCobraX <0) {
+          posicaoNasceCobraX=qp-1 
 
         }
-        if (px>qp-1){
-            px=0
+        if (posicaoNasceCobraX>qp-1){
+            posicaoNasceCobraX=0
         }
-        if (py<0) {
-            py=qp-1
+        if (posicaoNasceCobraY<0) {
+            posicaoNasceCobraY=qp-1
         }
-        if (py>qp-1) {
-            py=0
+        if (posicaoNasceCobraY>qp-1) {
+            posicaoNasceCobraY=0
         }
 
         context.fillStyle = "#002232"
@@ -46,17 +46,17 @@ document.addEventListener("keydown", keyPush )
 
         for (var i = 0; i < trail.length; i++) {
             context.fillRect(trail[i].x*tp, trail[i].y*tp,  tp-1,tp-1 )
-            if (trail[i].x == px  && trail[i].y == py){
+            if (trail[i].x == posicaoNasceCobraX  && trail[i].y == posicaoNasceCobraY){
                 vx = vy = 0
                 tail = 5
             }
             
         }
-        trail.push({x:px,y:py})
+        trail.push({x:posicaoNasceCobraX,y:posicaoNasceCobraY})
             while(trail.length>tail ){
                 trail.shift()
             }
-            if (ax==px && ay==py){
+            if (ax==posicaoNasceCobraX && ay==posicaoNasceCobraY){
                 tail++
                 ax=Math.floor(Math.random()*qp)
                 ay=Math.floor(Math.random()*qp)
