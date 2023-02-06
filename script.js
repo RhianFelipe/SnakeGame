@@ -13,7 +13,7 @@ document.addEventListener("keydown", keyPush )
     var posicaoNasceCobraY = 15 
     var  tamanhoPeca = 20 //tamanho da peça por quadrado
     var quantidadePecas = 20 //quantidade de peças no tabuleiro
-    var ax = ay = 15 //posição da maça 
+    var macaPosicaoX = macaPosicaoY = 15 //posição da maça 
     var trail = [] 
     tail = 5 
   
@@ -40,7 +40,7 @@ document.addEventListener("keydown", keyPush )
 
         context.fillStyle = "#ff674b"//cor da maça
         
-        context.fillRect(ax*tamanhoPeca, ay*tamanhoPeca,  tamanhoPeca,tamanhoPeca )
+        context.fillRect(macaPosicaoX*tamanhoPeca, macaPosicaoY*tamanhoPeca,  tamanhoPeca,tamanhoPeca )
         
         context.fillStyle = "#8eea80"
 
@@ -56,10 +56,10 @@ document.addEventListener("keydown", keyPush )
             while(trail.length>tail ){
                 trail.shift()
             }
-            if (ax==posicaoNasceCobraX && ay==posicaoNasceCobraY){
+            if (macaPosicaoX==posicaoNasceCobraX && macaPosicaoY==posicaoNasceCobraY){
                 tail++
-                ax=Math.floor(Math.random()*quantidadePecas)
-                ay=Math.floor(Math.random()*quantidadePecas)
+                macaPosicaoX=Math.floor(Math.random()*quantidadePecas)
+                macaPosicaoY=Math.floor(Math.random()*quantidadePecas)
             }
     }
      function  keyPush(event) {
