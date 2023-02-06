@@ -12,7 +12,7 @@ document.addEventListener("keydown", keyPush )
     var posicaoNasceCobraX = 10
     var posicaoNasceCobraY = 15 
     var  tamanhoPeca = 20 //tamanho da peça por quadrado
-    var qp = 20 //quantidade de peças no tabuleiro
+    var quantidadePecas = 20 //quantidade de peças no tabuleiro
     var ax = ay = 15 //posição da maça 
     var trail = [] 
     tail = 5 
@@ -21,16 +21,16 @@ document.addEventListener("keydown", keyPush )
       posicaoNasceCobraX += vx
       posicaoNasceCobraY += vy
       if (posicaoNasceCobraX <0) {
-          posicaoNasceCobraX=qp-1 
+          posicaoNasceCobraX=quantidadePecas-1 
 
         }
-        if (posicaoNasceCobraX>qp-1){
+        if (posicaoNasceCobraX>quantidadePecas-1){
             posicaoNasceCobraX=0
         }
         if (posicaoNasceCobraY<0) {
-            posicaoNasceCobraY=qp-1
+            posicaoNasceCobraY=quantidadePecas-1
         }
-        if (posicaoNasceCobraY>qp-1) {
+        if (posicaoNasceCobraY>quantidadePecas-1) {
             posicaoNasceCobraY=0
         }
 
@@ -58,8 +58,8 @@ document.addEventListener("keydown", keyPush )
             }
             if (ax==posicaoNasceCobraX && ay==posicaoNasceCobraY){
                 tail++
-                ax=Math.floor(Math.random()*qp)
-                ay=Math.floor(Math.random()*qp)
+                ax=Math.floor(Math.random()*quantidadePecas)
+                ay=Math.floor(Math.random()*quantidadePecas)
             }
     }
      function  keyPush(event) {
